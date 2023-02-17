@@ -40,7 +40,7 @@ function css(cb) {
 exports.default = function () {
     require('./server.js');
     livereload.listen();
-    gulp.watch('./pug/*.pug', series('html'));
+    gulp.watch('./pug/**/*.pug', series('html'));
     gulp.watch('./js/*.js', series('js'));
     gulp.watch(['./sass/**/*.css', './sass/**/*.scss'], series('css'));
 };

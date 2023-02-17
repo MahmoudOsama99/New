@@ -5,7 +5,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #f0eded;
+        background-color: #292c33;
+        color: #FFF;
         padding: 15px;
         transition: .3s;
         &.no-sidebar {left: -250px;}

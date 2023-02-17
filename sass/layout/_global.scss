@@ -5,10 +5,11 @@ body {}
     min-height: 100vh;
     .content-area {
         width: calc(100% - 250px);
-        min-height: 100%;
+        min-height: 100vh;
         transition: .4s;
         will-change: width;
         float: right;
+        background-color: #F2F1F6;
         &.no-sidebar {
             width: 100%;
         }
