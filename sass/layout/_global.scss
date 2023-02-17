@@ -6,7 +6,11 @@ body {}
     .content-area {
         width: calc(100% - 250px);
         min-height: 100%;
-        transition: .3s;
+        transition: .4s;
         will-change: width;
+        float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }

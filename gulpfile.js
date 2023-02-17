@@ -19,7 +19,7 @@ function html(cb) {
 function js(cb) {
     src('./js/*.js')
         .pipe(concat('main.js'))
-        .pipe(dest('./dist'))
+        .pipe(dest('./dist/js'))
         .pipe(livereload());
     cb();
 };
