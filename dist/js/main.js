@@ -7,5 +7,7 @@ $(function () {
         $(this).find(".fa-sharp").toggleClass('down')
         $(this).next(".child-links").slideToggle();
     });
-
+    $('.fa-bell').on("click", function() {
+        $(".dropdown-menu").toggleClass("down")
+    });
 });
