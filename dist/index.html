@@ -7,15 +7,41 @@
     <title>Ultimate</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&amp;display=swap">
   </head>
   <body> 
     <div class="page home-page"> 
-      <div class="sidebar">Sidebar</div>
+      <div class="sidebar"> 
+        <div class="logo-area text-center"> Ultimate</div>
+        <ul class="links-area list-unstyled"> 
+          <li><a href="#">Homepage</a></li>
+          <li> <a class="toggle-submenu" href="#">
+               Forms<i class="fa-sharp fa-solid fa-bars toggle-menua">     </i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Input</a></li>
+              <li><a href="#">Textarea</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Radio    </a></li>
+            </ul>
+          </li>
+          <li> <a class="toggle-submenu" href="#">
+               Misc<i class="fa-sharp fa-solid fa-bars toggle-menua"> </i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Loading</a></li>
+              <li><a href="#">Breadcrumbes    </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="content-area">
         <div class="header"> <i class="fa-sharp fa-solid fa-bars toggle-sidebar"></i></div>
-        <div class="content">
-          <h1>Ultimate</h1>
-          <h2>Hiiii        </h2>
+        <div class="container-fluid"> 
+          <div class="content">
+            <div class="page-head">
+              <h1>Ultimate</h1>
+              <p>Description   </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

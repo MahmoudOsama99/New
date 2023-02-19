@@ -1,1 +1,22 @@
-.sidebar Sidebar
+.sidebar 
+    .logo-area.text-center  Ultimate
+    ul.links-area.list-unstyled 
+        li: a(href="#") Homepage
+        li 
+            a.toggle-submenu(href="#") 
+                | Forms
+                i.fa-sharp.fa-solid.fa-bars.toggle-menua      
+            ul.child-links.list-unstyled
+                li: a(href="#") Input
+                li: a(href="#") Textarea
+                li: a(href="#") Checkbox
+                li: a(href="#") Radio    
+        li 
+            a.toggle-submenu(href="#") 
+                | Misc
+                i.fa-sharp.fa-solid.fa-bars.toggle-menua 
+            ul.child-links.list-unstyled
+                li: a(href="#") Loading
+                li: a(href="#") Breadcrumbes    
+                
+       
