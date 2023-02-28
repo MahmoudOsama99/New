@@ -1,6 +1,54 @@
 .header 
     i.fa-sharp.fa-solid.fa-bars.toggle-sidebar
     .dropdown.notification-container
-        i.fa.fa-bell.fa-lg.notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        i.fa.fa-bell.fa-lg.header-icon.notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
-            |  notifications
+            .noti-head
+                |  notifications
+                span 502
+            .noti-content
+                ul.list-unstyled
+                    li 
+                        i.fa.fa-envelope.fa-lg.first-icon
+                        | You Have Email
+                    li 
+                        i.fa.fa-envelope.fa-lg.second-icon
+                        | You Have Money
+                    li 
+                        i.fa.fa-envelope.fa-lg.third-icon
+                        | You Have Email
+                    li 
+                        i.fa.fa-envelope.fa-lg.fourth-icon
+                        | You Have Email
+                        
+            .noti-foot.text-center: a(href="#")  view all the notifications
+    i.fa.fa-exchange.fa-lg.toggle-fullscr.header-icon
+    .dropdown.usermenu-container
+        .usermenu#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar(src="imgs/avatar.png" ,alt="user avatar")
+            span.user  MahmoudOsama
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.user-show(aria-labelledby='usermenu')
+            .user-info  
+                h4 Mahmoud Osama 
+                p Premium Member 
+            hr
+            ul.activities-list.list-unstyled
+                li laallaalaalaalalal  d
+                li baalalalallaal  
+                li laallaalaalaalalal sfsdfff
+            hr
+            .row.usermenu-links
+                .col 
+                    .link-box 
+                        i.fa.fa-gear.fa-lg.fa-fw.setting
+                        span Setting
+                .col 
+                    .link-box 
+                        i.fa.fa-user.fa-lg.fa-fw.profile
+                        span Profile
+                .col 
+                    .link-box 
+                        i.fa.fa-power-off.fa-lg.fa-fw.logout
+                        span Logout
+

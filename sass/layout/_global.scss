@@ -1,6 +1,15 @@
 * {box-sizing: border-box;}
 body {
     font-family: 'Open Sans', sans-serif;
+    &.Roboto-font {
+        font-family: 'Roboto', sans-serif;
+    }
+    &.Neon-font {
+        font-family: 'Tilt Neon', cursive;
+    }
+    &.sans-font {
+        font-family: 'Open Sans', sans-serif;
+    }
 }
 
 .page {

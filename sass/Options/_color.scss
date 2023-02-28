@@ -1,0 +1,22 @@
+$themes: (
+    green-theme: (
+        color: #00b894 
+    ),
+    red-theme: (
+        color: #d63031 
+    ),
+    blue-theme: (
+        color: #0984e3
+    ),
+    black-theme: (
+        color: #000
+    )
+);
+
+@each $theme , $map in $themes {
+    .#{$theme} {
+        .page .content-area .page-head h1 {
+            color: map-get($map , color);
+        }
+    }
+}

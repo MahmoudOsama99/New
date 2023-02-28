@@ -5,13 +5,14 @@ html(lang="en")
       include layout/meta
       include layout/links
    body 
-      .page.home-page 
+      .page.home-page
+         include Components/setting-box
          include layout/sidebar
          .content-area
             include layout/header
             .container-fluid 
                .content
-                  include layout/page-head    
+                  include Components/page-head    
       include layout/scripts
 
 

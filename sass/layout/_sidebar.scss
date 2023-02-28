@@ -45,6 +45,11 @@
                 &:hover {
                     padding-left: 25px;
                 }
+                &.active {
+                    &:before {
+                        border-color:#59af64;
+                    }
+                }
             }
             .child-links {
                 position:relative;
@@ -75,6 +80,7 @@
                 float: right;
                 position: relative;
                 top: 0.5rem;
+                font-size: .8rem;
                 &.down {
                     transform: rotate(90deg);
                     transition: .2s;

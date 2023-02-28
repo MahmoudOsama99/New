@@ -1,11 +1,11 @@
 .sidebar 
     .logo-area.text-center  Ultimate
     ul.links-area.list-unstyled 
-        li: a(href="#") Homepage
+        li: a(href="index.html" class = pageTitle === 'Ultimate' ? 'active' : '') Homepage
         li 
             a.toggle-submenu(href="#") 
                 | Forms
-                i.fa-sharp.fa-solid.fa-bars.toggle-menua      
+                i.fa-sharp.fa-solid.fa-bars   
             ul.child-links.list-unstyled
                 li: a(href="#") Input
                 li: a(href="#") Textarea
@@ -14,9 +14,10 @@
         li 
             a.toggle-submenu(href="#") 
                 | Misc
-                i.fa-sharp.fa-solid.fa-bars.toggle-menua 
+                i.fa-sharp.fa-solid.fa-bars
             ul.child-links.list-unstyled
                 li: a(href="#") Loading
                 li: a(href="#") Breadcrumbes    
                 
-       
+        li: a(href="Charts.html" class = pageTitle === 'Charts' ? 'active' : '') charts
+

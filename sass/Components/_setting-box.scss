@@ -1,0 +1,59 @@
+.setting-box {
+    background-color: #e4e2e2;
+    position:fixed;
+    top:0;
+    right:-250px;
+    width:250px;
+    height:100%;
+    z-index:1000;
+    padding: 1.2rem;
+    transition: .3s;
+    &.show-setting {
+        right:0;
+    }
+    h4 {
+        font-weight: bold;
+        color: #666;
+        margin: 10px 0;
+    }
+    .toggle-setting {
+        position: absolute;
+        top:100px;
+        left: -34.8px;
+        background-color: #e4e2e2;
+        padding: 13px 7px;
+        font-size: 1.3rem;
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+    }
+    .color-options {
+        ul {
+            $colors: #00b894, #d63031 , #0984e3 ,#000;
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors , $i);
+                }
+            }
+            li {
+                width: 20px;
+                height: 20px;
+                opacity: .7;
+                border-radius: 50%;
+                display:inline-block;
+                margin-right: 5px;
+                cursor: pointer;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .font-options {
+        select {
+            text-transform: capitalize;
+            option { 
+                padding:2px 5px !important;
+            }
+        }
+    }
+}

@@ -4,32 +4,168 @@
     .toggle-sidebar {
         cursor: pointer;
     }
+    .header-icon {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 50%;
+        color:#777474;
+        cursor: pointer;
+    }
     .notification-container {
         display: inline-block;
         margin-left: 1.2rem;
         .notifications {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 50%;
-            color:#777474;
-            cursor: pointer;
+
         }
         .dropdown-menu {
             min-width: 600px;
-            padding: 20px;
             border:none;
+            padding:0;
+            top: 2.4rem;
+            right:-1rem;
+            left:-.4rem;
             &:before {
                 content:"";
                 position: absolute;
                 top: -20px;
-                left: 20px;
+                left: 16px;
                 border-style: solid;
-                border-width: 15px;
-                border-color: transparent transparent #999 transparent;
-
+                border-width: 10px;
+                border-color: transparent transparent #333 transparent;
             }
             &.down {
                 display:block;
+            }
+            .noti-head {
+                padding: 15px;
+                background-color: #292c33;
+                color:#FFF;
+                span {
+                    float:right;
+                }
+            }
+            .noti-content {
+               // padding:1rem;
+                ul {
+                    li {
+                        padding:10px;
+                        border-bottom:1px solid #f1eeee;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        color:#777;
+                        &:first-child {
+                            border-top: none;
+                        }
+                        &:last-child {
+                            border-bottom: none;
+                            margin-bottom:0;
+                            padding-bottom: 0;
+                        }
+                       i {
+                            width:2.5rem;
+                            height:2.5rem;
+                            line-height:1.3rem;
+                            background-color: #eee;
+                            padding:10px;
+                            border-radius:50%;
+                            text-align: center;
+                            margin-right:1rem;
+                            &.first-icon {
+                                color:#4caf50;
+                            }
+                            &.second-icon {
+                                color:#2196f3;
+                            }
+                            &.third-icon {
+                                color:#ff9800;
+                            }
+                            &.fourth-icon {
+                                color:#6b896c;
+                            }
+                       }
+                    }
+                }
+            }
+            .noti-foot {
+               a {
+                    padding:10px;
+                    border-top:2px solid #EEE;
+                    display:block;
+                    text-decoration: none;
+                    color:#4861da;
+                    font-size: 1.1rem; 
+               }
+            }
+        }
+    }
+    .usermenu-container {
+        float:right;
+        .usermenu {
+            cursor: pointer;
+            .avatar {
+                width:1.6rem;
+                height:1.6rem;
+            }
+            .user {
+                font-weight: bold;
+                font-size: .8rem;
+            }
+            i {
+                margin-left: 10px;
+                font-size: 1rem;
+                position: relative;
+                padding: 2px 5px;
+            }
+        }
+        .dropdown-menu {
+            min-width: 600px;
+            border:none;
+            padding:7px;
+            border-radius:6px;
+            top: 2.9rem;
+            right:0;
+            left:auto;
+            &:before {
+                content:"";
+                position: absolute;
+                top: -20px;
+                right: 45px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #333 transparent;
+            }
+            &.down-user {
+                display:block;
+            }
+            .user-info {
+                h4 {
+                    font-weight: bold;
+                }
+            }
+            .activities-list {
+                li {
+                    padding:10px;
+                }
+            }
+            .usermenu-links {
+                .link-box {
+                    background-color: #f4f3f3;
+                    padding:8px;
+                    border-radius:5px;
+                    cursor: pointer;
+                    i {
+                        margin-right:10px;
+                    }
+                    i.setting {
+                        color:#4caf50;
+                    }
+                    i.profile {
+                        color:#4c9baf;
+                    }
+                    i.logout {
+                        color:#4861da;
+                    }
+                }
             }
         }
     }
